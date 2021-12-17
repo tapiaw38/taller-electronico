@@ -1,0 +1,13 @@
+.container-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-logo {
+  flex-wrap: wrap;
+  width: 350px;
+  height: auto;
+  margin-top: -20px;
+  /*box-shadow: 5px 5px 0px #000;*/
+}

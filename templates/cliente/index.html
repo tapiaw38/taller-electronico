@@ -1,0 +1,30 @@
+{%extends 'base/base.html'%}
+
+
+{% block content %}
+<div class="jumbotron">
+  <p class="lead text-center">Bienvenido a Taller Electronico</p>
+  <hr class="my-4">
+  <p class="text-center">Prueba las diversas funcionalidades para registrar, listar usuarios y servicios.</p>
+    <p class="text-center">Además podrás generar comprobantes y recibos de pagos en formato PDF.</p>
+</div>
+  <p class="lead text-center">
+      <a class="btn btn-primary btn-lg d-inline-block m-1" href="{%url 'cliente_nuevo'%}" role="button">Crear cliente</a>
+      <a class="btn btn-primary btn-lg d-inline-block m-1" href="{%url 'cliente_listar'%}" role="button">Lista de clientes</a>
+      <a class="btn btn-primary btn-lg d-inline-block m-1" href="{%url 'tecnico_nuevo'%}" role="button">Crear servicio técnico</a>
+      <a class="btn btn-primary btn-lg d-inline-block m-1" href="{%url 'tecnico_listar'%}" role="button">Lista de servicios</a>
+  </p>
+
+
+{%endblock%}
+
+<!-- /.container -->
+{%block footer%}
+
+<footer class="blog-footer">
+  <p class="text-center">Servicio de software a medida.</p>
+  <p class="text-center">
+    <a>Copyright Servisoft © 2021. All rights reserved.</a>
+  </p>
+</footer>
+{%endblock%}
